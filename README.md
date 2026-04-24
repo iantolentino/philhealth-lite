@@ -1,5 +1,5 @@
 
-# 🇵🇭 PhilHealth Lite — Simple Health Guide
+# PhilHealth Lite — Summarize Philhealth website
 
 PhilHealth Lite is a simple, beginner-friendly web guide that explains PhilHealth in the Philippines in an easy-to-understand way.  
 It is designed for everyday users who want clear information about membership, contributions, benefits, and how to claim.
