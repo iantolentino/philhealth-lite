@@ -170,7 +170,7 @@
 
   /* ── QUICK NAV TABS ── */
   .tabs-wrap {
-      background: white;
+      background: #bedfb6;
       border-bottom: 1px solid var(--gray-100);
       position: sticky;
       top: 60px;
