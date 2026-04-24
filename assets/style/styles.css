@@ -170,14 +170,27 @@
 
   /* ── QUICK NAV TABS ── */
   .tabs-wrap {
-    background: white; border-bottom: 1px solid var(--gray-100);
-    position: sticky; top: 60px; z-index: 90;
-    overflow-x: auto; -webkit-overflow-scrolling: touch;
+      background: white;
+      border-bottom: 1px solid var(--gray-100);
+      position: sticky;
+      top: 60px;
+      z-index: 90;
+  
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+  
+      display: flex;
+      justify-content: center;
   }
   .tabs {
-    background: #334d2d;
-    display: flex; list-style: none;
-    padding: 0 16px; gap: 0; min-width: max-content;
+      background: #bedfb6;
+      display: flex;
+      list-style: none;
+      padding: 0 16px;
+      gap: 0;
+  
+      width: max-content; /* better than min-width */
+      margin: 0 auto;
   }
   .tabs a {
     display: flex; align-items: center; gap: 6px;
