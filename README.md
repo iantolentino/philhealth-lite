@@ -1,6 +1,4 @@
-Here’s a clean, simple **README.md** you can use for your project:
 
-```md
 # 🇵🇭 PhilHealth Lite — Simple Health Guide
 
 PhilHealth Lite is a simple, beginner-friendly web guide that explains PhilHealth in the Philippines in an easy-to-understand way.  
