@@ -101,3 +101,13 @@ window.addEventListener('scroll', () => {
     if (link.getAttribute('href') === '#' + current) link.classList.add('active');
   });
 });
+
+// ── AUTO CLOSE BURGER AFTER TAB CLICK (MOBILE) ──
+document.querySelectorAll('.tab-link').forEach(link => {
+  link.addEventListener('click', () => {
+    const nav = document.getElementById('navLinks');
+    if (window.innerWidth <= 768 && nav.classList.contains('open')) {
+      nav.classList.remove('open');
+    }
+  });
+});
