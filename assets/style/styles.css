@@ -44,6 +44,18 @@
     line-height: 1.6;
   }
 
+  /* REMOVE ALL EMOJIS (VISUAL ONLY) */
+  .tab-icon,
+  .member-emoji,
+  .alert-icon,
+  .doc-icon,
+  .card-icon,
+  .acc-emoji,
+  .hero-badge,
+  .note::before {
+    display: none !important;
+  }
+
   h1,h2,h3,h4 { font-family: 'Plus Jakarta Sans', sans-serif; }
 
   /* ── NAV ── */
@@ -170,27 +182,13 @@
 
   /* ── QUICK NAV TABS ── */
   .tabs-wrap {
-      background: #bedfb6;
-      border-bottom: 1px solid var(--gray-100);
-      position: sticky;
-      top: 60px;
-      z-index: 90;
-  
-      overflow-x: auto;
-      -webkit-overflow-scrolling: touch;
-  
-      display: flex;
-      justify-content: center;
+    background: white; border-bottom: 1px solid var(--gray-100);
+    position: sticky; top: 60px; z-index: 90;
+    overflow-x: auto; -webkit-overflow-scrolling: touch;
   }
   .tabs {
-      background: #bedfb6;
-      display: flex;
-      list-style: none;
-      padding: 0 16px;
-      gap: 0;
-  
-      width: max-content; /* better than min-width */
-      margin: 0 auto;
+    display: flex; list-style: none;
+    padding: 0 16px; gap: 0; min-width: max-content;
   }
   .tabs a {
     display: flex; align-items: center; gap: 6px;
@@ -520,3 +518,36 @@
   .pill-green { background: var(--green-light); color: var(--green); }
   .pill-red { background: var(--red-light); color: var(--red); }
   .pill-yellow { background: var(--yellow-light); color: #8A6A00; }
+
+    /* MOBILE: TABS INSIDE BURGER */
+  @media (max-width: 768px) {
+    .tabs-wrap {
+      position: fixed;
+      top: 64px;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      border-bottom: 1px solid #eee;
+    }
+
+    .tabs-wrap.open {
+      max-height: 80vh;
+    }
+
+    .tabs {
+      flex-direction: column;
+    }
+  }
+
+    @media (max-width: 768px) {
+    .tabs-wrap {
+      background: white;
+      border-bottom: 1px solid var(--gray-100);
+    }
+  }
+
+
+  
