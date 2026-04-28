@@ -1,12 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tl">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-<title>PhilHealth Lite — Simplified Philhealth Website</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="PhilHealth Lite — Simpleng gabay sa PhilHealth, SSS, at Pag-IBIG para sa lahat ng Pilipino. Libreng impormasyon tungkol sa registration, contributions, at benefits.">
+<title>PhilHealth Lite — Simplified Health &amp; Government Benefits Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/style/styles.css">
-<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text x='50%' y='65%' text-anchor='middle' font-size='70' font-family='Arial,Helvetica,sans-serif' fill='%2390ee90'>PL</text></svg>">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%231F8A5A'/><text x='50%' y='68%' text-anchor='middle' font-size='52' font-family='sans-serif' font-weight='900' fill='white'>PL</text></svg>">
 </head>
 <body>
 
@@ -15,7 +18,6 @@
   <a href="#" class="nav-brand">
     PhilHealth<span class="lite">LITE</span>
   </a>
-
   <div class="hamburger" id="hamburger" onclick="toggleNav()">
     <span></span><span></span><span></span>
   </div>
@@ -23,7 +25,6 @@
 
 <!-- HERO -->
 <div class="hero">
-  <div class="hero-badge">📋 Updated — 2026 Guide</div>
   <h1>PhilHealth <em>Made Simple</em></h1>
   <p>Lahat ng kailangan mong malaman tungkol sa iyong health insurance — malinaw, madaling basahin, para sa lahat.</p>
   <div class="hero-ctas">
@@ -41,15 +42,16 @@
 <!-- TAB BAR -->
 <div class="tabs-wrap" id="navLinks">
   <ul class="tabs">
-    <li><a href="#who" class="tab-link"><span class="tab-icon">👥</span> Sino ang Covered</a></li>
-    <li><a href="#register" class="tab-link"><span class="tab-icon">📝</span> Mag-Register</a></li>
-    <li><a href="#contribution" class="tab-link"><span class="tab-icon">💰</span> Contribution</a></li>
-    <li><a href="#benefits" class="tab-link"><span class="tab-icon">💊</span> Mga Benepisyo</a></li>
-    <li><a href="#illnesses" class="tab-link"><span class="tab-icon">🏥</span> Covered na Sakit</a></li>
-    <li><a href="#claim" class="tab-link"><span class="tab-icon">📄</span> Mag-Claim</a></li>
-    <li><a href="#yakap" class="tab-link"><span class="tab-icon">🤝</span> YAKAP</a></li>
-    <li><a href="#links" class="tab-link"><span class="tab-icon">🔗</span> Mga Links</a></li>
-    <li><a href="#faq" class="tab-link"><span class="tab-icon">❓</span> FAQ</a></li>
+    <li><a href="#who" class="tab-link">Sino ang Covered</a></li>
+    <li><a href="#register" class="tab-link">Mag-Register</a></li>
+    <li><a href="#contribution" class="tab-link">Contribution</a></li>
+    <li><a href="#benefits" class="tab-link">Mga Benepisyo</a></li>
+    <li><a href="#illnesses" class="tab-link">Covered na Sakit</a></li>
+    <li><a href="#claim" class="tab-link">Mag-Claim</a></li>
+    <li><a href="#yakap" class="tab-link">YAKAP</a></li>
+    <li><a href="#gov" class="tab-link">SSS &amp; Pag-IBIG</a></li>
+    <li><a href="#links" class="tab-link">Mga Links</a></li>
+    <li><a href="#faq" class="tab-link">FAQ</a></li>
   </ul>
 </div>
 
@@ -57,7 +59,7 @@
 <section id="who" style="background: white;">
   <div class="container">
     <div class="fade-in">
-      <span class="section-label">👥 Membership</span>
+      <span class="section-label">Membership</span>
       <h2 class="section-title">Sino ang Covered ng PhilHealth?</h2>
       <p class="section-sub">Sa ilalim ng Universal Health Care Act (RA 11223), lahat ng Pilipino ay may karapatang magamit ang PhilHealth.</p>
     </div>
@@ -65,44 +67,35 @@
       <div>
         <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px; color:var(--blue);">Direct Contributors (Nagbabayad)</h3>
         <div class="member-type">
-          <div class="member-emoji"></div>
-          <div><h4>Empleado (Private/Government)</h4><p>Ang kontribusyon ay hinahati ng employer at empleyado (2.5% bawat isa). Ang employer ang mag-reremit sa PhilHealth.</p></div>
+          <div><h4>Empleado (Private / Government)</h4><p>Ang kontribusyon ay hinahati ng employer at empleyado (2.5% bawat isa). Ang employer ang mag-reremit sa PhilHealth.</p></div>
         </div>
         <div class="member-type">
-          <div class="member-emoji"></div>
           <div><h4>Self-Employed / Freelancer</h4><p>Ikaw mismo ang nagbabayad ng buong 5% contribution base sa iyong declared income.</p></div>
         </div>
         <div class="member-type">
-          <div class="member-emoji"></div>
           <div><h4>OFW (Land-based)</h4><p>₱6,000/taon (₱500/buwan). Sea-based OFWs ay salary-based, katulad ng empleyado.</p></div>
         </div>
         <div class="member-type">
-          <div class="member-emoji"></div>
           <div><h4>Kasambahay</h4><p>Kung ang sahod ay ₱5,000 pababa, ang employer (amo) ang nagbabayad ng buong contribution.</p></div>
         </div>
       </div>
       <div>
         <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px; color:var(--green);">Libreng Covered (Indirect)</h3>
         <div class="member-type" style="border-left-color: var(--green);">
-          <div class="member-emoji"></div>
           <div><h4>Senior Citizens (60+)</h4><p>Awtomatikong covered ang lahat ng Senior Citizens. Ang gobyerno ang nagbabayad ng kanilang kontribusyon.</p></div>
         </div>
         <div class="member-type" style="border-left-color: var(--green);">
-          <div class="member-emoji"></div>
           <div><h4>Indigent / 4Ps Members</h4><p>Mga mahirap at 4Ps beneficiaries — covered ng LGU o gobyerno ang premium.</p></div>
         </div>
         <div class="member-type" style="border-left-color: var(--yellow);">
-          <div class="member-emoji"></div>
           <div><h4>Lifetime Members</h4><p>Kung nagbayad ka ng <strong>120 monthly contributions</strong> (10 taon), lifetime coverage ka na — hindi na kailangang magbayad pa!</p></div>
         </div>
         <div class="member-type" style="border-left-color: var(--red);">
-          <div class="member-emoji"></div>
           <div><h4>Mga Dependent</h4><p><strong>Legal spouse</strong>, <strong>mga anak</strong> (below 21, unmarried, unemployed), <strong>magulang</strong> 60+ years old — lahat covered ng iyong membership!</p></div>
         </div>
       </div>
     </div>
     <div class="alert alert-info fade-in" style="margin-top:24px;">
-      <span class="alert-icon">💡</span>
       <p><strong>Wala pang PhilHealth?</strong> Kahit walang trabaho, pwede kang mag-register bilang <strong>voluntary member</strong>. Punta sa pinakamalapit na PhilHealth office o mag-register online sa <a href="https://memberinquiry.philhealth.gov.ph/member/" target="_blank" style="color:var(--blue);font-weight:600;">memberinquiry.philhealth.gov.ph</a></p>
     </div>
   </div>
@@ -118,30 +111,29 @@
     </div>
 
     <div class="type-selector fade-in">
-      <button class="type-btn active" onclick="showRegType('employed')">Empleado</button>
-      <button class="type-btn" onclick="showRegType('self')">Self-Employed</button>
-      <button class="type-btn" onclick="showRegType('ofw')">OFW</button>
-      <button class="type-btn" onclick="showRegType('voluntary')">Voluntary</button>
-      <button class="type-btn" onclick="showRegType('senior')">Senior Citizen</button>
+      <button class="type-btn active" onclick="showRegType('employed', this)">Empleado</button>
+      <button class="type-btn" onclick="showRegType('self', this)">Self-Employed</button>
+      <button class="type-btn" onclick="showRegType('ofw', this)">OFW</button>
+      <button class="type-btn" onclick="showRegType('voluntary', this)">Voluntary</button>
+      <button class="type-btn" onclick="showRegType('senior', this)">Senior Citizen</button>
     </div>
 
     <!-- EMPLOYED -->
     <div id="reg-employed" class="reg-content active fade-in">
       <div class="alert alert-success">
-        <span class="alert-icon">✅</span>
         <p><strong>Magandang balita!</strong> Kung employed ka, ang iyong employer ang mag-reregister at mag-reremit ng contributions para sayo. Hindi mo kailangang pumunta sa PhilHealth office.</p>
       </div>
       <div class="two-col" style="margin-top:20px;">
         <div>
-          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">📋 Mga Dokumento para sa Employer</h3>
+          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Mga Dokumento para sa Employer</h3>
           <ul class="doc-list">
-            <li><span class="doc-icon">📄</span><div><strong>PMRF <span class="tag tag-req">Required</span></strong><span>PhilHealth Member Registration Form — i-fill out ng dalawang kopya</span></div></li>
-            <li><span class="doc-icon">🪪</span><div><strong>Valid Government ID <span class="tag tag-req">Required</span></strong><span>Passport, Driver's License, SSS, UMID, o National ID</span></div></li>
-            <li><span class="doc-icon">📜</span><div><strong>PSA Birth Certificate <span class="tag tag-opt">Kung hihilingin</span></strong><span>Para ma-verify ang iyong personal details</span></div></li>
+            <li><div><strong>PMRF <span class="tag tag-req">Required</span></strong><span>PhilHealth Member Registration Form — i-fill out ng dalawang kopya</span></div></li>
+            <li><div><strong>Valid Government ID <span class="tag tag-req">Required</span></strong><span>Passport, Driver's License, SSS, UMID, o National ID</span></div></li>
+            <li><div><strong>PSA Birth Certificate <span class="tag tag-opt">Kung hihilingin</span></strong><span>Para ma-verify ang iyong personal details</span></div></li>
           </ul>
         </div>
         <div>
-          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">✅ Mga Susunod na Hakbang</h3>
+          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Mga Susunod na Hakbang</h3>
           <div class="steps">
             <div class="step"><div class="step-left"><div class="step-num">1</div><div class="step-line"></div></div><div class="step-content"><h4>Ibigay sa HR ang iyong dokumento</h4><p>Ang HR o employer ang mag-reregister sa PhilHealth behalf mo.</p></div></div>
             <div class="step"><div class="step-left"><div class="step-num">2</div><div class="step-line"></div></div><div class="step-content"><h4>Tanggapin ang iyong PhilHealth PIN</h4><p>Ibibigay ng HR ang iyong 12-digit PhilHealth Identification Number (PIN).</p></div></div>
@@ -155,22 +147,21 @@
     <!-- SELF-EMPLOYED -->
     <div id="reg-self" class="reg-content fade-in">
       <div class="alert alert-warn">
-        <span class="alert-icon">⚠️</span>
         <p><strong>Importante:</strong> Bilang self-employed, ikaw mismo ang magre-register. Pwedeng online o sa pinakamalapit na PhilHealth office.</p>
       </div>
       <div class="two-col" style="margin-top:20px;">
         <div>
-          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">📋 Mga Dokumentong Kailangan</h3>
+          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Mga Dokumentong Kailangan</h3>
           <ul class="doc-list">
-            <li><span class="doc-icon">📄</span><div><strong>PMRF (2 kopya) <span class="tag tag-req">Required</span></strong><span>I-download sa philhealth.gov.ph — i-fill out ng maayos</span></div></li>
-            <li><span class="doc-icon">🪪</span><div><strong>2 Valid Government IDs <span class="tag tag-req">Required</span></strong><span>Passport, Driver's License, SSS, UMID, Postal ID, o National ID</span></div></li>
-            <li><span class="doc-icon">📜</span><div><strong>PSA Birth Certificate <span class="tag tag-req">Required</span></strong><span>Siguraduhing tama ang spelling ng pangalan — dapat tugma sa PMRF!</span></div></li>
-            <li><span class="doc-icon">💼</span><div><strong>Proof of Income <span class="tag tag-opt">Recommended</span></strong><span>Latest ITR, payslip, o simple income declaration. Batayan ng iyong monthly contribution.</span></div></li>
-            <li><span class="doc-icon">📧</span><div><strong>Valid Email Address <span class="tag tag-req">Required (Online)</span></strong><span>Dito ipapadala ang iyong PIN (3–5 working days)</span></div></li>
+            <li><div><strong>PMRF (2 kopya) <span class="tag tag-req">Required</span></strong><span>I-download sa philhealth.gov.ph — i-fill out ng maayos</span></div></li>
+            <li><div><strong>2 Valid Government IDs <span class="tag tag-req">Required</span></strong><span>Passport, Driver's License, SSS, UMID, Postal ID, o National ID</span></div></li>
+            <li><div><strong>PSA Birth Certificate <span class="tag tag-req">Required</span></strong><span>Siguraduhing tama ang spelling ng pangalan — dapat tugma sa PMRF</span></div></li>
+            <li><div><strong>Proof of Income <span class="tag tag-opt">Recommended</span></strong><span>Latest ITR, payslip, o simple income declaration. Batayan ng iyong monthly contribution.</span></div></li>
+            <li><div><strong>Valid Email Address <span class="tag tag-req">Required (Online)</span></strong><span>Dito ipapadala ang iyong PIN (3–5 working days)</span></div></li>
           </ul>
         </div>
         <div>
-          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">🖥️ Online Registration Steps</h3>
+          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Online Registration Steps</h3>
           <div class="steps">
             <div class="step"><div class="step-left"><div class="step-num">1</div><div class="step-line"></div></div><div class="step-content"><h4>Pumunta sa PhilHealth Portal</h4><p>Buksan ang <strong>memberinquiry.philhealth.gov.ph</strong> at i-click ang "Register"</p></div></div>
             <div class="step"><div class="step-left"><div class="step-num">2</div><div class="step-line"></div></div><div class="step-content"><h4>I-fill out ang PMRF online</h4><p>I-enter ang lahat ng personal details. <strong>Tiyaking tama ang spelling ng pangalan</strong> — dapat tugma sa PSA birth certificate.</p></div></div>
@@ -179,8 +170,7 @@
             <div class="step"><div class="step-left"><div class="step-num">5</div><div class="step-line"></div></div><div class="step-content"><h4>Gumawa ng SPA bago magbayad</h4><p><strong>Bagong rule sa 2026:</strong> Kailangan ng Statement of Premium Account (SPA) bago ang bawat bayad. I-generate sa Member Portal.</p></div></div>
           </div>
           <div class="alert alert-danger" style="margin-top:16px;">
-            <span class="alert-icon">🚨</span>
-            <p><strong>No SPA, No Payment!</strong> Simula Abril 2026, tinatanggihan ng GCash, Maya, at mga bangko ang bayad ng walang SPA number. I-generate muna sa portal.</p>
+            <p><strong>No SPA, No Payment!</strong> Simula Abril 2026, tinatanggihan ng GCash, Maya, at mga bangko ang bayad na walang SPA number. I-generate muna sa portal.</p>
           </div>
         </div>
       </div>
@@ -190,28 +180,27 @@
     <div id="reg-ofw" class="reg-content fade-in">
       <div class="two-col">
         <div>
-          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">📋 Mga Dokumentong Kailangan (OFW)</h3>
+          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Mga Dokumentong Kailangan (OFW)</h3>
           <ul class="doc-list">
-            <li><span class="doc-icon">📄</span><div><strong>PMRF (2 kopya) <span class="tag tag-req">Required</span></strong><span>Ilagay ang "OFW" bilang membership type</span></div></li>
-            <li><span class="doc-icon">🪪</span><div><strong>Valid Government ID <span class="tag tag-req">Required</span></strong><span>Passport (most important para sa OFW)</span></div></li>
-            <li><span class="doc-icon">📜</span><div><strong>PSA Birth Certificate <span class="tag tag-req">Required</span></strong></div></li>
-            <li><span class="doc-icon">✈️</span><div><strong>OFW Proof <span class="tag tag-req">Required</span></strong><span>OEC (Overseas Employment Certificate) o valid employment contract abroad</span></div></li>
+            <li><div><strong>PMRF (2 kopya) <span class="tag tag-req">Required</span></strong><span>Ilagay ang "OFW" bilang membership type</span></div></li>
+            <li><div><strong>Valid Government ID <span class="tag tag-req">Required</span></strong><span>Passport (most important para sa OFW)</span></div></li>
+            <li><div><strong>PSA Birth Certificate <span class="tag tag-req">Required</span></strong></div></li>
+            <li><div><strong>OFW Proof <span class="tag tag-req">Required</span></strong><span>OEC (Overseas Employment Certificate) o valid employment contract abroad</span></div></li>
           </ul>
           <div class="period-box" style="margin-top:16px;">
-            <h4>💰 OFW Contribution Rate</h4>
+            <h4>OFW Contribution Rate</h4>
             <p><strong>Land-based OFW:</strong> ₱6,000/taon (₱500/buwan). Pwedeng bayaran ng advance ng 2–5 taon.<br><strong>Sea-based OFW:</strong> Salary-based, katulad ng employed member, hinahati ng manning agency.</p>
           </div>
         </div>
         <div>
-          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">💳 Paraan ng Pagbabayad para sa OFW</h3>
+          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Paraan ng Pagbabayad para sa OFW</h3>
           <ul class="doc-list">
-            <li><span class="doc-icon">🏦</span><div><strong>Overseas Remittance Centers</strong><span>Western Union, LBC, at iba pang money transfer centers</span></div></li>
-            <li><span class="doc-icon">🏢</span><div><strong>PhilHealth-Accredited Agents Abroad</strong><span>Mga accredited na collecting agents sa ibang bansa</span></div></li>
-            <li><span class="doc-icon">📱</span><div><strong>Online Payment (GCash/Maya)</strong><span>Kailangan ng SPA number mula sa Member Portal</span></div></li>
-            <li><span class="doc-icon">📅</span><div><strong>Advance Payment</strong><span>Bayaran ng 2–5 taon bago umalis o habang nasa ibang bansa</span></div></li>
+            <li><div><strong>Overseas Remittance Centers</strong><span>Western Union, LBC, at iba pang money transfer centers</span></div></li>
+            <li><div><strong>PhilHealth-Accredited Agents Abroad</strong><span>Mga accredited na collecting agents sa ibang bansa</span></div></li>
+            <li><div><strong>Online Payment (GCash / Maya)</strong><span>Kailangan ng SPA number mula sa Member Portal</span></div></li>
+            <li><div><strong>Advance Payment</strong><span>Bayaran ng 2–5 taon bago umalis o habang nasa ibang bansa</span></div></li>
           </ul>
           <div class="alert alert-info" style="margin-top:16px;">
-            <span class="alert-icon">ℹ️</span>
             <p>Ang mga dependent ng OFW na naiwan sa Pilipinas ay pwedeng gumamit ng benefits habang ang OFW ay nasa ibang bansa.</p>
           </div>
         </div>
@@ -221,86 +210,81 @@
     <!-- VOLUNTARY -->
     <div id="reg-voluntary" class="reg-content fade-in">
       <div class="alert alert-info">
-        <span class="alert-icon">ℹ️</span>
         <p>Kahit walang trabaho o nakatigil sa trabaho, pwede kang mag-register bilang <strong>voluntary member</strong> para mapanatili ang iyong coverage.</p>
       </div>
       <div class="two-col" style="margin-top:20px;">
         <div>
-          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">📋 Mga Dokumentong Kailangan</h3>
+          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Mga Dokumentong Kailangan</h3>
           <ul class="doc-list">
-            <li><span class="doc-icon">📄</span><div><strong>PMRF (2 kopya) <span class="tag tag-req">Required</span></strong></div></li>
-            <li><span class="doc-icon">🪪</span><div><strong>Valid Government ID <span class="tag tag-req">Required</span></strong><span>Passport, Driver's License, SSS, UMID, National ID</span></div></li>
-            <li><span class="doc-icon">📜</span><div><strong>PSA Birth Certificate <span class="tag tag-opt">Recommended</span></strong></div></li>
+            <li><div><strong>PMRF (2 kopya) <span class="tag tag-req">Required</span></strong></div></li>
+            <li><div><strong>2 Valid Government IDs <span class="tag tag-req">Required</span></strong><span>Passport, Driver's License, SSS, UMID, o National ID</span></div></li>
+            <li><div><strong>PSA Birth Certificate <span class="tag tag-req">Required</span></strong></div></li>
           </ul>
-          <div class="period-box" style="margin-top:16px;">
-            <h4>💰 Voluntary Contribution</h4>
-            <p>Babayaran mo ang buong 5% base sa iyong declared income. Minimum: ₱500/buwan (base sa ₱10,000 minimum na sahod). Pwedeng bayaran monthly, quarterly, semi-annually, o annually.</p>
-          </div>
         </div>
         <div>
-          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">📍 Saan Mag-Register</h3>
-          <ul class="doc-list">
-            <li><span class="doc-icon">🏢</span><div><strong>PhilHealth Local Insurance Office (LHIO)</strong><span>Pinakamalapit na PhilHealth office sa inyong lugar</span></div></li>
-            <li><span class="doc-icon">🏪</span><div><strong>PhilHealth Express Office</strong><span>Mga satellite offices sa malls at iba pang lugar</span></div></li>
-            <li><span class="doc-icon">🖥️</span><div><strong>Online: memberinquiry.philhealth.gov.ph</strong><span>Para sa mas mabilis na proseso — PIN darating sa email</span></div></li>
-          </ul>
+          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Mga Hakbang</h3>
+          <div class="steps">
+            <div class="step"><div class="step-left"><div class="step-num">1</div><div class="step-line"></div></div><div class="step-content"><h4>Mag-register online o sa PhilHealth office</h4><p>Pumunta sa <strong>memberinquiry.philhealth.gov.ph</strong> para sa online registration o bisitahin ang pinakamalapit na PhilHealth office.</p></div></div>
+            <div class="step"><div class="step-left"><div class="step-num">2</div><div class="step-line"></div></div><div class="step-content"><h4>Piliin ang contribution amount</h4><p>Minimum ay ₱500/buwan. Mas mataas ang bayad, mas mataas ang potential benefits base sa case rate computations.</p></div></div>
+            <div class="step"><div class="step-left"><div class="step-num">3</div><div class="step-line"></div></div><div class="step-content"><h4>Gumawa ng SPA at magbayad</h4><p>I-generate ang Statement of Premium Account (SPA) sa Member Portal bago magbayad sa GCash, Maya, o bangko.</p></div></div>
+          </div>
         </div>
       </div>
     </div>
 
-    <!-- SENIOR -->
+    <!-- SENIOR CITIZEN -->
     <div id="reg-senior" class="reg-content fade-in">
       <div class="alert alert-success">
-        <span class="alert-icon">🎉</span>
-        <p><strong>Libreng coverage ang lahat ng Senior Citizens!</strong> Sa ilalim ng RA 10645, ang lahat ng Pilipino na 60 taong gulang pataas ay awtomatikong covered ng PhilHealth. Ang gobyerno ang nagbabayad ng kanilang contribution.</p>
+        <p><strong>Libre at Awtomatiko!</strong> Ang lahat ng Senior Citizens (60 taong gulang pataas) ay awtomatikong covered ng PhilHealth. Ang gobyerno ang nagbabayad ng kanilang premium — walang bayad ang senior!</p>
       </div>
       <div class="two-col" style="margin-top:20px;">
         <div>
-          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">📋 Mga Kailangan para ma-Activate ang Record</h3>
+          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Mga Dokumentong Kailangan (para sa enrollment)</h3>
           <ul class="doc-list">
-            <li><span class="doc-icon">🪪</span><div><strong>Valid ID na may petsa ng kapanganakan <span class="tag tag-req">Required</span></strong><span>Senior Citizen ID, Passport, o Driver's License</span></div></li>
-            <li><span class="doc-icon">📄</span><div><strong>PMRF <span class="tag tag-opt">Para sa hindi pa naka-record</span></strong><span>Para maipasok ang inyong record sa sistema ng PhilHealth</span></div></li>
+            <li><div><strong>PMRF (2 kopya) <span class="tag tag-req">Required</span></strong></div></li>
+            <li><div><strong>Senior Citizen ID <span class="tag tag-req">Required</span></strong></div></li>
+            <li><div><strong>PSA Birth Certificate <span class="tag tag-req">Required</span></strong></div></li>
           </ul>
         </div>
         <div>
-          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">🏥 Paano Gamitin ang Benepisyo</h3>
-          <ul class="doc-list">
-            <li><span class="doc-icon">🪪</span><div><strong>Dalhin ang Senior Citizen ID</strong><span>Ipakita sa ospital o clinic para ma-verify ang membership</span></div></li>
-            <li><span class="doc-icon">📋</span><div><strong>Humingi ng MDR</strong><span>Pumunta sa PhilHealth office para ma-download o ma-print ang Member Data Record</span></div></li>
-            <li><span class="doc-icon">🏪</span><div><strong>Mag-enroll sa YAKAP Clinic</strong><span>Para sa libreng checkup, lab tests, at gamot</span></div></li>
-          </ul>
+          <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Tandaan para sa mga Senior</h3>
+          <div class="period-box">
+            <h4>Walang contribution na kailangan</h4>
+            <p>Hindi na kailangang magbayad ng PhilHealth premium. Gamitin lang ang Senior Citizen ID o MDR sa mga accredited hospitals at clinics.</p>
+          </div>
+          <div class="alert alert-info" style="margin-top:12px;">
+            <p>Pumunta sa pinakamalapit na PhilHealth office na may dalang Senior Citizen ID at PSA Birth Certificate para ma-enroll at makuha ang PIN.</p>
+          </div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SECTION 3: CONTRIBUTION RATES -->
+<!-- SECTION 3: CONTRIBUTION -->
 <section id="contribution" style="background: white;">
   <div class="container">
     <div class="fade-in">
-      <span class="section-label">💰 Contribution</span>
-      <h2 class="section-title">Magkano ang Bayad sa PhilHealth?</h2>
-      <p class="section-sub">Ang premium rate para sa 2026 ay <strong>5%</strong> ng iyong monthly basic salary. Walang pagtaas mula 2025.</p>
+      <span class="section-label">Contributions</span>
+      <h2 class="section-title">Magkano ang Monthly Contribution?</h2>
+      <p class="section-sub">I-compute ang iyong contribution at tingnan ang rate table para sa 2026.</p>
     </div>
 
     <!-- CALCULATOR -->
     <div class="calc-wrap fade-in">
-      <h3>🧮 Contribution Calculator</h3>
-      <p>I-type ang iyong monthly salary para malaman kung magkano ang babayaran mo.</p>
-      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;">
-        <div class="calc-input-group">
-          <label>Membership Type</label>
-          <select id="calcType" onchange="calcContrib()">
-            <option value="employed">Employed (50-50 split sa employer)</option>
-            <option value="self">Self-Employed / Voluntary (100% sarili)</option>
-            <option value="ofw-land">OFW Land-based (₱6,000/taon fixed)</option>
-          </select>
-        </div>
-        <div class="calc-input-group" id="salaryGroup">
-          <label>Monthly Basic Salary (₱)</label>
-          <input type="number" id="salaryInput" placeholder="e.g. 25000" oninput="calcContrib()" min="0">
-        </div>
+      <h3>Contribution Calculator</h3>
+      <p>Ilagay ang iyong monthly salary para malaman ang iyong exact na babayaran.</p>
+      <div class="calc-input-group">
+        <label>Membership Type</label>
+        <select id="calcType" onchange="calcContrib()">
+          <option value="employed">Employed (50-50 split sa employer)</option>
+          <option value="self">Self-Employed / Voluntary (100% sarili)</option>
+          <option value="ofw-land">OFW Land-based (₱6,000/taon fixed)</option>
+        </select>
+      </div>
+      <div class="calc-input-group" id="salaryGroup">
+        <label>Monthly Basic Salary (₱)</label>
+        <input type="number" id="salaryInput" placeholder="e.g. 25000" oninput="calcContrib()" min="0">
       </div>
       <div class="calc-results" id="calcResults">
         <div class="calc-result-box"><div class="label">Total Monthly</div><div class="value" id="res-total">—</div><div class="sub">buwan</div></div>
@@ -312,7 +296,7 @@
 
     <!-- TABLE -->
     <div style="margin-top: 36px;" class="fade-in">
-      <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">📊 Contribution Table 2026</h3>
+      <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Contribution Table 2026</h3>
       <div class="table-wrap">
         <table>
           <thead><tr><th>Monthly Salary</th><th>Total (5%)</th><th>Employee Share (2.5%)</th><th>Employer Share (2.5%)</th></tr></thead>
@@ -330,48 +314,43 @@
         </table>
       </div>
       <div class="alert alert-info" style="margin-top:12px;">
-        <span class="alert-icon">ℹ️</span>
-        <p><strong>Para sa Self-Employed/Voluntary:</strong> Kayo mismo ang nagbabayad ng buong 5%. Minimum ay ₱500/buwan. <strong>OFW Land-based:</strong> Fixed na ₱6,000/taon (₱500/buwan).</p>
+        <p><strong>Para sa Self-Employed / Voluntary:</strong> Kayo mismo ang nagbabayad ng buong 5%. Minimum ay ₱500/buwan. <strong>OFW Land-based:</strong> Fixed na ₱6,000/taon (₱500/buwan).</p>
       </div>
     </div>
 
     <!-- PAYMENT METHODS -->
     <div style="margin-top: 36px;" class="fade-in">
-      <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">💳 Paano Magbayad?</h3>
+      <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Paano Magbayad?</h3>
       <div class="grid grid-3">
         <div class="card">
-          <div class="card-icon icon-blue">📱</div>
           <h3>GCash / Maya</h3>
           <p>I-generate muna ang SPA sa Member Portal, pagkatapos bayaran online. <strong>Tanggap ngayon simula 2026.</strong></p>
-          <span class="pill pill-green" style="margin-top:8px;">✓ Pinaka-convenient</span>
+          <span class="pill pill-green" style="margin-top:8px;">Pinaka-convenient</span>
         </div>
         <div class="card">
-          <div class="card-icon icon-yellow">🏦</div>
           <h3>Mga Bangko</h3>
           <p>BDO, BPI, Landbank, DBP, at iba pang accredited banks. Kailangan din ng SPA number.</p>
         </div>
         <div class="card">
-          <div class="card-icon icon-green">🏪</div>
           <h3>Payment Centers</h3>
           <p>Bayad Center, SM Bills Payment, Robinsons Business Center, at iba pa sa buong Pilipinas.</p>
         </div>
       </div>
       <div class="alert alert-warn" style="margin-top:12px;">
-        <span class="alert-icon">⚠️</span>
-        <p><strong>Tandaan:</strong> Para sa mga self-employed, voluntary, at OFW — kailangan munang gumawa ng <strong>SPA (Statement of Premium Account)</strong> sa Member Portal bago magbayad. "No SPA, No Payment" — tatanggihan ang payment kung walang SPA.</p>
+        <p><strong>Tandaan:</strong> Para sa mga self-employed, voluntary, at OFW — kailangan munang gumawa ng <strong>SPA (Statement of Premium Account)</strong> sa Member Portal bago magbayad. "No SPA, No Payment."</p>
       </div>
     </div>
 
-    <!-- ELIGIBILITY REMINDER -->
+    <!-- ELIGIBILITY -->
     <div style="margin-top: 36px;" class="fade-in">
-      <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Paano maging Eligible sa mga Benefits</h3>
+      <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">Paano Maging Eligible sa mga Benefits</h3>
       <div class="grid grid-2">
         <div class="period-box">
-          <h4>📅 Para sa Confinement (Hospitalization)</h4>
+          <h4>Para sa Confinement (Hospitalization)</h4>
           <p>Dapat may <strong>3 monthly contributions sa loob ng nakaraang 6 buwan</strong>, O <strong>9 monthly contributions sa loob ng nakaraang 12 buwan</strong> bago ka ma-admit.</p>
         </div>
         <div class="period-box">
-          <h4>🕐 Deadline ng Pag-Claim</h4>
+          <h4>Deadline ng Pag-Claim</h4>
           <p><strong>60 araw</strong> pagkatapos ng discharge para sa mga naospital sa Pilipinas. <strong>180 araw</strong> para sa OFW na naospital sa ibang bansa.</p>
         </div>
       </div>
@@ -392,13 +371,12 @@
 
       <div class="acc-item">
         <div class="acc-header" onclick="toggleAcc(this)">
-          <div class="acc-header-left"><span class="acc-emoji">🏥</span><span>Inpatient Benefits (Hospitalization)</span></div>
-          <span class="acc-arrow">▼</span>
+          <div class="acc-header-left"><span>Inpatient Benefits (Hospitalization)</span></div>
+          <span class="acc-arrow">&#9660;</span>
         </div>
         <div class="acc-body">
           <p>Gumagamit ang PhilHealth ng <strong>case rate system</strong> — ang bawat sakit o operasyon ay may fixed na halaga na sinasaklaw, kabilang ang silid, gamot, lab tests, at bayad sa doktor.</p>
           <div class="alert alert-success" style="margin: 12px 0;">
-            <span class="alert-icon">🎉</span>
             <p><strong>50% Increase sa Case Rates (Enero 2025)!</strong> Tumaas ang mga benepisyo ng 50% sa halos 9,000 benefit packages — halos doble na ngayon kumpara sa dati (2014 rates).</p>
           </div>
           <ul>
@@ -410,14 +388,14 @@
             <li>Normal Delivery (Birthing Home) — <strong>₱15,600</strong></li>
             <li>Cesarean Section — <strong>₱37,050</strong></li>
           </ul>
-          <div class="note">🚫 <strong>Tinanggal na ang 45-day limit (Abril 2025)!</strong> Hindi na limitado sa 45 araw kada taon ang coverage. Pwede nang mag-confinement nang mas matagal kung kinakailangan.</div>
+          <div class="note"><strong>Tinanggal na ang 45-day limit (Abril 2025)!</strong> Hindi na limitado sa 45 araw kada taon ang coverage. Pwede nang mag-confinement nang mas matagal kung kinakailangan.</div>
         </div>
       </div>
 
       <div class="acc-item">
         <div class="acc-header" onclick="toggleAcc(this)">
-          <div class="acc-header-left"><span class="acc-emoji">👶</span><span>Maternity at Newborn Care</span></div>
-          <span class="acc-arrow">▼</span>
+          <div class="acc-header-left"><span>Maternity at Newborn Care</span></div>
+          <span class="acc-arrow">&#9660;</span>
         </div>
         <div class="acc-body">
           <ul>
@@ -426,14 +404,14 @@
             <li>Cesarean Section — <strong>₱37,050</strong></li>
             <li>Newborn Care Package — <strong>₱1,750 hanggang ₱4,425</strong></li>
           </ul>
-          <div class="note">💡 Kasama sa Newborn Care Package ang: Newborn Screening, Hearing Test, at Essential Newborn Care. Kasama rin ang prenatal at postnatal check-up visits.</div>
+          <div class="note">Kasama sa Newborn Care Package ang: Newborn Screening, Hearing Test, at Essential Newborn Care. Kasama rin ang prenatal at postnatal check-up visits.</div>
         </div>
       </div>
 
       <div class="acc-item">
         <div class="acc-header" onclick="toggleAcc(this)">
-          <div class="acc-header-left"><span class="acc-emoji">🦷</span><span>Dental Benefits (Oral Health)</span></div>
-          <span class="acc-arrow">▼</span>
+          <div class="acc-header-left"><span>Dental Benefits (Oral Health)</span></div>
+          <span class="acc-arrow">&#9660;</span>
         </div>
         <div class="acc-body">
           <p>Maraming Pilipino ang hindi pa alam na may dental benefits ang PhilHealth! Sa pamamagitan ng YAKAP program, may libreng dental checkup ka na.</p>
@@ -445,14 +423,14 @@
             <li>Emergency Tooth Extraction</li>
           </ul>
           <span class="coverage-amount">Maximum: ₱1,000/taon</span>
-          <div class="note">✅ Sa <strong>public dental clinics</strong> — LIBRE, walang co-payment. Sa private clinics, may co-payment na ₱600–₱1,500. <br>❌ Hindi covered: Braces, whitening, implants, dentures, root canal, at mga cosmetic procedure.</div>
+          <div class="note">Sa <strong>public dental clinics</strong> — LIBRE, walang co-payment. Sa private clinics, may co-payment na ₱600–₱1,500. <br>Hindi covered: Braces, whitening, implants, dentures, root canal, at mga cosmetic procedure.</div>
         </div>
       </div>
 
       <div class="acc-item">
         <div class="acc-header" onclick="toggleAcc(this)">
-          <div class="acc-header-left"><span class="acc-emoji">🩸</span><span>Dialysis Coverage</span></div>
-          <span class="acc-arrow">▼</span>
+          <div class="acc-header-left"><span>Dialysis Coverage</span></div>
+          <span class="acc-arrow">&#9660;</span>
         </div>
         <div class="acc-body">
           <p>Malaking expansion ang ginawa ng PhilHealth sa dialysis coverage — halos tatlong beses na ang coverage ngayon!</p>
@@ -472,8 +450,8 @@
 
       <div class="acc-item">
         <div class="acc-header" onclick="toggleAcc(this)">
-          <div class="acc-header-left"><span class="acc-emoji">💊</span><span>Outpatient at Gamot (YAKAP / GAMOT Package)</span></div>
-          <span class="acc-arrow">▼</span>
+          <div class="acc-header-left"><span>Outpatient at Gamot (YAKAP / GAMOT Package)</span></div>
+          <span class="acc-arrow">&#9660;</span>
         </div>
         <div class="acc-body">
           <p>Ang YAKAP program ay nagbibigay ng primary care benefits sa mga enrolled na provider.</p>
@@ -482,17 +460,17 @@
             <li><strong>13 diagnostic tests</strong>: CBC, Urinalysis, Fasting Blood Sugar, Lipid Profile, Chest X-Ray, at iba pa</li>
             <li><strong>75 essential medicines</strong> para sa chronic conditions (hypertension, diabetes, asthma, high cholesterol)</li>
             <li><strong>6 cancer screening tests</strong></li>
-            <li>Annual Health Assessment/Screening</li>
+            <li>Annual Health Assessment / Screening</li>
             <li>Dental services (tingnan ang Dental benefits)</li>
           </ul>
-          <div class="note">📍 Para magamit ang YAKAP: Kailangan mong <strong>mag-enroll sa isang YAKAP-accredited clinic</strong> sa pamamagitan ng Member Portal, at kumpletuhin ang iyong First Patient Encounter (FPE).</div>
+          <div class="note">Para magamit ang YAKAP: Kailangan mong <strong>mag-enroll sa isang YAKAP-accredited clinic</strong> sa pamamagitan ng Member Portal, at kumpletuhin ang iyong First Patient Encounter (FPE).</div>
         </div>
       </div>
 
       <div class="acc-item">
         <div class="acc-header" onclick="toggleAcc(this)">
-          <div class="acc-header-left"><span class="acc-emoji">🚨</span><span>Outpatient Emergency Care (BAGO — 2025)</span></div>
-          <span class="acc-arrow">▼</span>
+          <div class="acc-header-left"><span>Outpatient Emergency Care (BAGO — 2025)</span></div>
+          <span class="acc-arrow">&#9660;</span>
         </div>
         <div class="acc-body">
           <p>Bagong benepisyo simula Enero 2025! Saklaw na ng PhilHealth ang mga emergency na hindi nangangailangan ng hospital admission.</p>
@@ -506,8 +484,8 @@
 
       <div class="acc-item">
         <div class="acc-header" onclick="toggleAcc(this)">
-          <div class="acc-header-left"><span class="acc-emoji">🎗️</span><span>Z-Benefits (Catastrophic / Malubhang Sakit)</span></div>
-          <span class="acc-arrow">▼</span>
+          <div class="acc-header-left"><span>Z-Benefits (Catastrophic / Malubhang Sakit)</span></div>
+          <span class="acc-arrow">&#9660;</span>
         </div>
         <div class="acc-body">
           <p>Ang Z-Benefits ay para sa pinaka-mahal na mga sakit. Kailangan ng <strong>pre-authorization</strong> at available lang sa mga selected na contracted hospitals.</p>
@@ -520,19 +498,18 @@
                 <tr><td>Kidney Transplant (Deceased Donor)</td><td class="highlight-row">₱2.14 million</td></tr>
                 <tr><td>Post-Kidney Transplant (monthly)</td><td>₱40,725/buwan</td></tr>
                 <tr><td>Childhood Leukemia (ALL)</td><td>Buong treatment course</td></tr>
-                <tr><td>Coronary Artery Bypass Graft</td><td>Available (halaga nag-iiba)</td></tr>
-                <tr><td>Prostate Cancer</td><td>₱100,000</td></tr>
+                <tr><td>Prostate Cancer</td><td>Hanggang ₱1.6 million</td></tr>
               </tbody>
             </table>
           </div>
-          <div class="note">⚠️ <strong>Tandaan:</strong> Ang Lung Cancer ay hindi pa covered ng Z-Benefits hanggang 2026.</div>
+          <div class="note"><strong>Tandaan:</strong> Ang Lung Cancer ay hindi pa covered ng Z-Benefits hanggang 2026.</div>
         </div>
       </div>
 
       <div class="acc-item">
         <div class="acc-header" onclick="toggleAcc(this)">
-          <div class="acc-header-left"><span class="acc-emoji">🧠</span><span>Mental Health at Iba Pang Packages</span></div>
-          <span class="acc-arrow">▼</span>
+          <div class="acc-header-left"><span>Mental Health at Iba Pang Packages</span></div>
+          <span class="acc-arrow">&#9660;</span>
         </div>
         <div class="acc-body">
           <div class="table-wrap">
@@ -549,7 +526,7 @@
               </tbody>
             </table>
           </div>
-          <div class="note">💡 Ang Mental Health benefits ay available sa RHUs, City Health Offices, at DOH Mental Health Access Program sites.</div>
+          <div class="note">Ang Mental Health benefits ay available sa RHUs, City Health Offices, at DOH Mental Health Access Program sites.</div>
         </div>
       </div>
 
@@ -561,7 +538,7 @@
 <section id="illnesses" style="background: white;">
   <div class="container">
     <div class="fade-in">
-      <span class="section-label">🏥 Coverage</span>
+      <span class="section-label">Coverage</span>
       <h2 class="section-title">Mga Sakit na Covered ng PhilHealth</h2>
       <p class="section-sub">Ilan sa mga karaniwang sakit at kondisyon na may PhilHealth coverage.</p>
     </div>
@@ -600,7 +577,6 @@
     </div>
 
     <div class="alert alert-warn fade-in" style="margin-top:20px;">
-      <span class="alert-icon">⚠️</span>
       <p><strong>Hindi lahat ay covered ng PhilHealth.</strong> Kasama sa hindi covered: Braces, teeth whitening, cosmetic surgery, vitamins/supplements, at mga elective procedures na hindi medikal. Para sa kumpletong listahan, bisitahin ang <a href="https://www.philhealth.gov.ph/services/acr/" target="_blank" style="color:var(--blue);font-weight:600;">Case Rates Search Tool ng PhilHealth</a>.</p>
     </div>
   </div>
@@ -610,7 +586,7 @@
 <section id="claim">
   <div class="container">
     <div class="fade-in">
-      <span class="section-label">📄 Claiming</span>
+      <span class="section-label">Claiming</span>
       <h2 class="section-title">Paano Mag-Claim ng Benefits?</h2>
       <p class="section-sub">Dalawang paraan ng pag-claim: sa accredited facility (mas madali) o reimbursement.</p>
     </div>
@@ -618,7 +594,7 @@
     <div class="two-col fade-in">
       <div>
         <div style="padding: 18px; background: var(--blue-light); border-radius: 10px; margin-bottom: 16px; border-left: 4px solid var(--blue);">
-          <h3 style="font-size:0.95rem; font-weight:700; color:var(--blue); margin-bottom:6px;">✅ Paraan 1: Sa Accredited Facility (Pinaka-madali)</h3>
+          <h3 style="font-size:0.95rem; font-weight:700; color:var(--blue); margin-bottom:6px;">Paraan 1: Sa Accredited Facility (Pinaka-madali)</h3>
           <p style="font-size:0.82rem; color:var(--gray-700);">Ang ospital ang mag-ha-handle ng claim sa ngalan mo. Ito ang pinaka-convenient na paraan.</p>
         </div>
         <div class="steps">
@@ -632,7 +608,7 @@
 
       <div>
         <div style="padding: 18px; background: var(--yellow-light); border-radius: 10px; margin-bottom: 16px; border-left: 4px solid var(--yellow);">
-          <h3 style="font-size:0.95rem; font-weight:700; color:#7A5800; margin-bottom:6px;">🔄 Paraan 2: Reimbursement (Non-Accredited Facility)</h3>
+          <h3 style="font-size:0.95rem; font-weight:700; color:#7A5800; margin-bottom:6px;">Paraan 2: Reimbursement (Non-Accredited Facility)</h3>
           <p style="font-size:0.82rem; color:var(--gray-700);">Kung hindi accredited ang ospital o clinic na pinuntahan mo, pwede kang mag-apply ng reimbursement.</p>
         </div>
         <div class="steps">
@@ -642,26 +618,8 @@
           <div class="step"><div class="step-left"><div class="step-num">4</div><div class="step-line"></div></div><div class="step-content"><h4>Hintayin ang refund</h4><p>Ibibigay ng PhilHealth ang covered na halaga direkta sa iyo. Pwede ring sa bank transfer.</p></div></div>
         </div>
         <div class="alert alert-danger" style="margin-top:12px;">
-          <span class="alert-icon">⏰</span>
           <p><strong>Deadline ng Claim:</strong> <strong>60 araw</strong> pagkatapos ng discharge (Pilipinas). <strong>180 araw</strong> para sa OFW na naospital sa ibang bansa. Huwag palampasin!</p>
         </div>
-      </div>
-    </div>
-
-    <!-- DOCS NEEDED FOR CLAIM -->
-    <div style="margin-top: 36px;" class="fade-in">
-      <h3 style="font-size:1rem; font-weight:700; margin-bottom:14px;">📋 Mga Dokumentong Kailangan sa Pag-Claim</h3>
-      <div class="grid grid-2">
-        <ul class="doc-list">
-          <li><span class="doc-icon">🪪</span><div><strong>PhilHealth ID o MDR <span class="tag tag-req">Required</span></strong><span>Member Data Record — mas accepted ngayon kaysa physical ID</span></div></li>
-          <li><span class="doc-icon">📄</span><div><strong>Claim Form 1 (CF1) <span class="tag tag-req">Required</span></strong><span>Personal at medical data — ika'y pipirmahan mo</span></div></li>
-          <li><span class="doc-icon">📄</span><div><strong>Claim Form 2 (CF2) <span class="tag tag-req">Required</span></strong><span>Detalye ng serbisyong natanggap — ospital ang mag-fi-fill out</span></div></li>
-        </ul>
-        <ul class="doc-list">
-          <li><span class="doc-icon">✍️</span><div><strong>Claim Signature Form (CSF) <span class="tag tag-req">Required</span></strong><span>Pirma mo bilang kumpirmasyon ng paggamit ng benefits</span></div></li>
-          <li><span class="doc-icon">🧾</span><div><strong>Official Receipts <span class="tag tag-req">Para sa Reimbursement</span></strong><span>Patunay ng bayad sa ospital</span></div></li>
-          <li><span class="doc-icon">📊</span><div><strong>Proof of Contributions <span class="tag tag-opt">Kung hihilingin</span></strong><span>Para patunayan na eligible ka</span></div></li>
-        </ul>
       </div>
     </div>
   </div>
@@ -671,161 +629,349 @@
 <section id="yakap" style="background: white;">
   <div class="container">
     <div class="fade-in">
-      <span class="section-label">🤝 YAKAP Program</span>
-      <h2 class="section-title">Ano ang YAKAP Program?</h2>
-      <p class="section-sub">YAKAP (Yaman ng Kalusugan Program) — ang bagong sistema ng PhilHealth para sa libreng primary care.</p>
+      <span class="section-label">Primary Care</span>
+      <h2 class="section-title">YAKAP — Ang Primary Care Program ng PhilHealth</h2>
+      <p class="section-sub">Ang YAKAP (Your Health as a Right to Access and Participation) ay nagbibigay ng libreng primary care benefits sa lahat ng enrolled na miyembro.</p>
     </div>
 
-    <div class="grid grid-2 fade-in">
-      <div class="card" style="border-left: 4px solid var(--blue);">
-        <div class="card-icon icon-blue">🏥</div>
-        <h3>Ano ang makukuha mo?</h3>
-        <ul style="list-style:none; margin-top:8px;">
-          <li style="padding: 5px 0; font-size:0.86rem; color:var(--gray-700); border-bottom: 1px solid var(--gray-100);">✅ <strong>Unlimited</strong> primary care visits</li>
-          <li style="padding: 5px 0; font-size:0.86rem; color:var(--gray-700); border-bottom: 1px solid var(--gray-100);">✅ <strong>13 diagnostic tests</strong> (CBC, urinalysis, lipid profile, etc.)</li>
-          <li style="padding: 5px 0; font-size:0.86rem; color:var(--gray-700); border-bottom: 1px solid var(--gray-100);">✅ <strong>75 essential medicines</strong> para sa hypertension, diabetes, asthma</li>
-          <li style="padding: 5px 0; font-size:0.86rem; color:var(--gray-700); border-bottom: 1px solid var(--gray-100);">✅ <strong>6 cancer screening tests</strong></li>
-          <li style="padding: 5px 0; font-size:0.86rem; color:var(--gray-700); border-bottom: 1px solid var(--gray-100);">✅ Annual health assessment</li>
-          <li style="padding: 5px 0; font-size:0.86rem; color:var(--gray-700);">✅ Dental preventive care</li>
-        </ul>
+    <div class="grid grid-3 fade-in" style="margin-bottom:32px;">
+      <div class="card" style="border-top: 3px solid var(--blue);">
+        <h3>Unlimited na Bisita</h3>
+        <p>Libreng konsultasyon sa iyong YAKAP-enrolled clinic nang walang limitasyon sa bilang ng bisita bawat taon.</p>
       </div>
-      <div class="card" style="border-left: 4px solid var(--green);">
-        <div class="card-icon icon-green">📱</div>
-        <h3>Paano Mag-Enroll sa YAKAP?</h3>
-        <div class="steps" style="margin-top:8px;">
-          <div class="step"><div class="step-left"><div class="step-num" style="width:28px;height:28px;font-size:0.8rem;">1</div><div class="step-line"></div></div><div class="step-content"><h4 style="font-size:0.85rem;">Mag-login sa Member Portal</h4><p>Pumunta sa memberinquiry.philhealth.gov.ph</p></div></div>
-          <div class="step"><div class="step-left"><div class="step-num" style="width:28px;height:28px;font-size:0.8rem;">2</div><div class="step-line"></div></div><div class="step-content"><h4 style="font-size:0.85rem;">Piliin ang YAKAP Clinic</h4><p>Hanapin ang pinakamalapit na accredited YAKAP clinic sa inyong lugar.</p></div></div>
-          <div class="step"><div class="step-left"><div class="step-num" style="width:28px;height:28px;font-size:0.8rem;">3</div><div class="step-line"></div></div><div class="step-content"><h4 style="font-size:0.85rem;">Kumpletuhin ang First Patient Encounter (FPE)</h4><p>Pumunta sa iyong chosen clinic para sa unang check-up. Pagkatapos nito, activated na ang iyong YAKAP benefits.</p></div></div>
-        </div>
+      <div class="card" style="border-top: 3px solid var(--green);">
+        <h3>13 Lab Tests</h3>
+        <p>Kasama ang CBC, Urinalysis, Fasting Blood Sugar, Lipid Profile, Chest X-Ray, at iba pang diagnostic tests.</p>
       </div>
-    </div>
-
-    <div class="alert alert-warn fade-in" style="margin-top:20px;">
-      <span class="alert-icon">⚠️</span>
-      <p><strong>YAKAP Transition Timeline:</strong> Simula <strong>Hulyo 1, 2026</strong>, lahat ng clinics ay dapat nasa YAKAP na system na (Electronic Medical Records). Ang lumang eKonsulta system ay ise-shut down. Kung ang iyong regular clinic ay hindi pa nag-migrate, tanungin sila kung kailan sila lilipat.</p>
-    </div>
-  </div>
-</section>
-
-<!-- SECTION 8: LINKS -->
-<section id="links">
-  <div class="container">
-    <div class="fade-in">
-      <span class="section-label">🔗 Mga Kapaki-pakinabang na Links</span>
-      <h2 class="section-title">Official PhilHealth Resources</h2>
-      <p class="section-sub">Mga link para sa mga opisyal na PhilHealth pages at accredited facilities.</p>
+      <div class="card" style="border-top: 3px solid var(--yellow);">
+        <h3>75 Libreng Gamot</h3>
+        <p>Para sa hypertension, diabetes, asthma, at iba pang chronic conditions — libre ang mga gamot sa enrolled clinic.</p>
+      </div>
     </div>
 
     <div class="two-col fade-in">
       <div>
-        <h3 style="font-size:0.9rem; font-weight:700; margin-bottom:12px; color:var(--blue);">🏛️ Official Government Links</h3>
-        <a href="https://www.philhealth.gov.ph" target="_blank" class="link-card">
-          <span class="lc-icon">🏥</span>
-          <div class="lc-text"><strong>PhilHealth Official Website</strong><span>philhealth.gov.ph — main website</span></div>
-          <span class="lc-arrow">↗</span>
+        <h3 style="font-size:1rem; font-weight:700; margin-bottom:16px;">Paano Mag-Enroll sa YAKAP</h3>
+        <div class="yakap-step">
+          <div class="yakap-num">1</div>
+          <div><h4>Pumunta sa Member Portal</h4><p>I-login sa memberinquiry.philhealth.gov.ph at hanapin ang YAKAP enrollment section.</p></div>
+        </div>
+        <div class="yakap-step">
+          <div class="yakap-num">2</div>
+          <div><h4>Piliin ang iyong YAKAP clinic</h4><p>Pumili ng clinic o health center malapit sa iyo mula sa listahan ng accredited YAKAP providers.</p></div>
+        </div>
+        <div class="yakap-step">
+          <div class="yakap-num">3</div>
+          <div><h4>Kumpletuhin ang First Patient Encounter (FPE)</h4><p>Pumunta sa iyong napiling YAKAP clinic at kumpletuhin ang iyong initial health assessment. Ito ang mag-activate ng iyong YAKAP benefits.</p></div>
+        </div>
+        <div class="yakap-step">
+          <div class="yakap-num">4</div>
+          <div><h4>Simulan ang paggamit ng mga benepisyo</h4><p>Pagkatapos ng FPE, pwede ka nang mag-avail ng unlimited consultations, lab tests, at libreng gamot.</p></div>
+        </div>
+      </div>
+      <div>
+        <h3 style="font-size:1rem; font-weight:700; margin-bottom:16px;">Kasama sa YAKAP Benefits</h3>
+        <ul class="doc-list">
+          <li><div><strong>Unlimited primary care visits</strong><span>Walang limit sa konsultasyon sa enrolled clinic</span></div></li>
+          <li><div><strong>Annual Health Assessment</strong><span>Libreng check-up at health screening bawat taon</span></div></li>
+          <li><div><strong>13 diagnostic tests</strong><span>CBC, urinalysis, lipid profile, blood sugar, X-ray, at iba pa</span></div></li>
+          <li><div><strong>75 essential medicines</strong><span>Para sa chronic conditions — hypertension, diabetes, asthma</span></div></li>
+          <li><div><strong>6 cancer screening tests</strong><span>Breast, cervical, colorectal, at iba pang cancer screenings</span></div></li>
+          <li><div><strong>Dental services</strong><span>Oral exam, cleaning, fluoride, at emergency extraction (max ₱1,000/taon)</span></div></li>
+          <li><div><strong>Mental health check</strong><span>Basic mental health assessment at referral kung kinakailangan</span></div></li>
+        </ul>
+        <div class="alert alert-warn" style="margin-top:16px;">
+          <p><strong>Mahalagang alamin:</strong> Ang YAKAP benefits ay available lang sa iyong enrolled clinic. Kung magpunta ka sa ibang clinic na hindi enrolled, kailangan mong mag-bayad ng regular na konsultasyon fee.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 8 (NEW): SSS & PAG-IBIG GUIDE -->
+<section id="gov">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Government Benefits</span>
+      <h2 class="section-title">SSS at Pag-IBIG — Simpleng Gabay</h2>
+      <p class="section-sub">Bukod sa PhilHealth, kailangan mo ring malaman ang tungkol sa SSS at Pag-IBIG — ang dalawa pang mahahalagang government benefit programs para sa lahat ng Pilipino.</p>
+    </div>
+
+    <div class="gov-tabs fade-in">
+      <button class="gov-tab-btn sss-btn active" onclick="showGovService('sss', this)">SSS — Social Security System</button>
+      <button class="gov-tab-btn pagibig-btn" onclick="showGovService('pagibig', this)">Pag-IBIG Fund</button>
+    </div>
+
+    <!-- SSS PANEL -->
+    <div id="gov-sss" class="gov-panel active sss fade-in">
+      <div class="gov-header sss-header">
+        <div class="gov-header-logo">SSS</div>
+        <div class="gov-header-text">
+          <h3>Social Security System</h3>
+          <p>Proteksyon para sa mga manggagawa — sickness, disability, maternity, retirement, at iba pa.</p>
+        </div>
+      </div>
+
+      <h3 style="font-size:0.95rem; font-weight:700; margin-bottom:14px;">Mga Benepisyo ng SSS</h3>
+      <div class="gov-benefits-grid">
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Sickness Benefit</h4>
+          <p>Nagbabayad ng daily cash allowance kung naospital ka o nagkasakit at hindi makapagtrabaho. Katumbas ng 90% ng average daily salary credit.</p>
+        </div>
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Maternity Benefit</h4>
+          <p>Para sa mga nagbubuntis — 105 days ng maternity leave pay (120 days para sa solo parent). Babayaran ng SSS direkta sa miyembro.</p>
+        </div>
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Disability Benefit</h4>
+          <p>Monthly pension o lump sum kung permanent na hindi na makakapagtrabaho dahil sa aksidente o sakit.</p>
+        </div>
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Retirement Benefit</h4>
+          <p>Monthly pension pagdating ng 60 o 65 taong gulang. Ang halaga ay base sa iyong contributions at number of credited years of service.</p>
+        </div>
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Death Benefit</h4>
+          <p>Pension o lump sum para sa mga dependent ng miyembro kapag namatay. Kasama ang funeral benefit na hanggang ₱40,000.</p>
+        </div>
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Unemployment Benefit</h4>
+          <p>Kung nawalan ka ng trabaho na hindi mo pinili, pwede kang mag-claim ng 2-month cash benefit — 50% ng iyong average monthly salary credit.</p>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:28px;">
+        <div>
+          <h3 style="font-size:0.95rem; font-weight:700; margin-bottom:14px; color: var(--sss);">Paano Mag-Register sa SSS</h3>
+          <div class="steps">
+            <div class="step"><div class="step-left"><div class="step-num" style="background:var(--sss);">1</div><div class="step-line"></div></div><div class="step-content"><h4>Pumunta sa My.SSS Portal</h4><p>Buksan ang <a href="https://www.sss.gov.ph" target="_blank" style="color:var(--sss);font-weight:600;">www.sss.gov.ph</a> at i-click ang "Not yet registered?" para sa online registration. Bilang alternatibo, pumunta sa pinakamalapit na SSS branch.</p></div></div>
+            <div class="step"><div class="step-left"><div class="step-num" style="background:var(--sss);">2</div><div class="step-line"></div></div><div class="step-content"><h4>I-fill out ang SS Form E-1 (Personal Record)</h4><p>I-complete ang lahat ng personal information. Para sa online, ire-redirect ka sa form pagkatapos ng initial registration.</p></div></div>
+            <div class="step"><div class="step-left"><div class="step-num" style="background:var(--sss);">3</div><div class="step-line"></div></div><div class="step-content"><h4>Isumite ang mga dokumento</h4><p>Online: i-upload ang mga scanned documents. Walk-in: dalhin ang mga original at photocopy sa SSS branch.</p></div></div>
+            <div class="step"><div class="step-left"><div class="step-num" style="background:var(--sss);">4</div><div class="step-line"></div></div><div class="step-content"><h4>Tanggapin ang SS Number</h4><p>Ang iyong 10-digit SS Number ay magiging available pagkatapos ng processing. Para sa employed, ang employer ang mag-aasikaso ng registration.</p></div></div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:0.95rem; font-weight:700; margin-bottom:14px; color: var(--sss);">Mga Dokumentong Kailangan</h3>
+          <ul class="doc-list">
+            <li><div><strong>PSA Birth Certificate <span class="tag tag-req">Primary</span></strong><span>Pinaka-importanteng dokumento — siguraduhing may PSA dry seal</span></div></li>
+            <li><div><strong>Valid Primary ID <span class="tag tag-opt">Alternatibo</span></strong><span>Passport, Driver's License, o PRC ID — kung walang PSA Birth Cert</span></div></li>
+            <li><div><strong>2 Valid Secondary IDs <span class="tag tag-opt">Kung walang Primary</span></strong><span>UMID, Voter's ID, Postal ID, o ibang government-issued ID</span></div></li>
+            <li><div><strong>SS Form E-1 <span class="tag tag-req">Required</span></strong><span>Personal Record Form — i-download sa sss.gov.ph o kumuha sa SSS branch</span></div></li>
+          </ul>
+          <div class="alert alert-info" style="margin-top:16px;">
+            <p><strong>Para sa mga Employed:</strong> Ang employer ang mag-reregister sa SSS behalf mo. I-provide lang ang mga dokumento sa iyong HR department — katulad ng PhilHealth.</p>
+          </div>
+          <div class="gov-quick-links">
+            <a href="https://www.sss.gov.ph" target="_blank" class="btn btn-sss" style="font-size:0.85rem; padding:10px 18px;">Pumunta sa SSS Website</a>
+            <a href="https://www.sss.gov.ph/sss/application?actionType=mySSSEnroll" target="_blank" class="btn btn-outline" style="font-size:0.85rem; padding:10px 18px; background:var(--sss-light); color:var(--sss); border-color:var(--sss);">My.SSS Online Portal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- PAG-IBIG PANEL -->
+    <div id="gov-pagibig" class="gov-panel pagibig fade-in">
+      <div class="gov-header pagibig-header">
+        <div class="gov-header-logo">HDMF</div>
+        <div class="gov-header-text">
+          <h3>Pag-IBIG Fund (HDMF)</h3>
+          <p>Housing, savings, at emergency loan program para sa lahat ng Pilipinong manggagawa.</p>
+        </div>
+      </div>
+
+      <h3 style="font-size:0.95rem; font-weight:700; margin-bottom:14px;">Mga Benepisyo ng Pag-IBIG</h3>
+      <div class="gov-benefits-grid">
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Housing Loan</h4>
+          <p>Umutang ng hanggang ₱6 million para sa pagbili, pagtatayo, o pagpapagawa ng bahay. Term: hanggang 30 taon sa mababang interest rate.</p>
+        </div>
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>MP2 Savings Program</h4>
+          <p>Modified Pag-IBIG II — voluntary savings na may mas mataas na dividend (average 5–8% per year). Minimum na ₱500 bawat deposito.</p>
+        </div>
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Multi-Purpose Loan</h4>
+          <p>Cash loan para sa anumang layunin — medical, education, travel, o business. Hanggang 80% ng iyong Total Accumulated Value (TAV).</p>
+        </div>
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Calamity Loan</h4>
+          <p>Emergency loan kung naapektuhan ng natural disaster ang iyong lugar. Hanggang 80% ng TAV, na may mas mababang interest at extended repayment.</p>
+        </div>
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Provident Savings</h4>
+          <p>Ang iyong regular Pag-IBIG contributions ay naipon bilang savings na may dividend. Maaari mong i-withdraw ito kapag nag-retire ka o nagvoluntary separation.</p>
+        </div>
+        <div class="gov-benefit-card">
+          <div class="gbc-accent"></div>
+          <h4>Short-Term Loan</h4>
+          <p>Para sa mga miyembro na may regular na contributions — pwedeng umutang ng hanggang ₱24,000 sa 24-month term.</p>
+        </div>
+      </div>
+
+      <div class="two-col" style="margin-top:28px;">
+        <div>
+          <h3 style="font-size:0.95rem; font-weight:700; margin-bottom:14px; color: var(--pagibig);">Paano Mag-Register sa Pag-IBIG</h3>
+          <div class="steps">
+            <div class="step"><div class="step-left"><div class="step-num" style="background:var(--pagibig);">1</div><div class="step-line"></div></div><div class="step-content"><h4>I-access ang Virtual Pag-IBIG</h4><p>Pumunta sa <a href="https://www.pagibigfund.gov.ph" target="_blank" style="color:var(--pagibig);font-weight:600;">www.pagibigfund.gov.ph</a> at piliin ang "Register" sa Virtual Pag-IBIG portal para sa online registration.</p></div></div>
+            <div class="step"><div class="step-left"><div class="step-num" style="background:var(--pagibig);">2</div><div class="step-line"></div></div><div class="step-content"><h4>I-fill out ang Member's Data Form (MDF)</h4><p>I-complete ang personal information. Para sa online: sa portal mismo. Para sa walk-in: kumuha ng MDF sa kahit anong Pag-IBIG branch.</p></div></div>
+            <div class="step"><div class="step-left"><div class="step-num" style="background:var(--pagibig);">3</div><div class="step-line"></div></div><div class="step-content"><h4>Isumite ang mga dokumento</h4><p>Isumite ang MDF kasama ang dalawang valid ID. Para sa walk-in, mag-submit sa pinakamalapit na Pag-IBIG branch.</p></div></div>
+            <div class="step"><div class="step-left"><div class="step-num" style="background:var(--pagibig);">4</div><div class="step-line"></div></div><div class="step-content"><h4>Tanggapin ang MID Number</h4><p>Ang iyong Pag-IBIG MID (Membership ID) ay ang iyong permanent member number. Itago ito — kakailanganin sa lahat ng transactions.</p></div></div>
+          </div>
+        </div>
+        <div>
+          <h3 style="font-size:0.95rem; font-weight:700; margin-bottom:14px; color: var(--pagibig);">Mga Dokumentong Kailangan</h3>
+          <ul class="doc-list">
+            <li><div><strong>Member's Data Form (MDF) <span class="tag tag-req">Required</span></strong><span>I-download sa pagibigfund.gov.ph o kumuha sa branch</span></div></li>
+            <li><div><strong>2 Valid Government IDs <span class="tag tag-req">Required</span></strong><span>Passport, Driver's License, SSS ID, UMID, PhilHealth ID, Voter's ID, o National ID</span></div></li>
+          </ul>
+          <div class="period-box" style="margin-top:16px;">
+            <h4>Monthly Contribution Rate</h4>
+            <p><strong>Employed:</strong> 2% ng basic salary, hinahati ng employer (1% employee, 1% employer). <strong>Self-employed / Voluntary:</strong> Minimum na ₱200/buwan.</p>
+          </div>
+          <div class="alert alert-info" style="margin-top:16px;">
+            <p><strong>Para sa MP2 Savings:</strong> Kahit hindi employed, pwede kang mag-enroll sa MP2 Program bilang voluntary contributor. Mas mataas ang dividend kaysa regular savings accounts.</p>
+          </div>
+          <div class="gov-quick-links">
+            <a href="https://www.pagibigfund.gov.ph" target="_blank" class="btn btn-pagibig" style="font-size:0.85rem; padding:10px 18px;">Pumunta sa Pag-IBIG Website</a>
+            <a href="https://www.pagibigfund.gov.ph/index_virtualpagibig.html" target="_blank" class="btn btn-outline" style="font-size:0.85rem; padding:10px 18px; background:var(--pagibig-light); color:var(--pagibig); border-color:var(--pagibig);">Virtual Pag-IBIG Portal</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- DECISION HELPER -->
+    <div class="decision-wrap fade-in">
+      <h3>Saan Ko Dapat Pumunta?</h3>
+      <p>Piliin ang iyong sitwasyon para malaman kung aling government program ang para sayo.</p>
+      <div class="decision-choices" id="decision-choices">
+        <button class="decision-btn" onclick="runDecisionHelper('housing')"><strong>Gusto ko ng sariling bahay</strong>Paano ako makakakuha ng housing loan?</button>
+        <button class="decision-btn" onclick="runDecisionHelper('jobless')"><strong>Nawalan ako ng trabaho</strong>May benepisyo ba para sa akin?</button>
+        <button class="decision-btn" onclick="runDecisionHelper('sick')"><strong>Nagkasakit o na-ospital</strong>Paano ko gagamitin ang benepisyo?</button>
+        <button class="decision-btn" onclick="runDecisionHelper('savings')"><strong>Gusto kong mag-ipon</strong>Saan mas mataas ang interest?</button>
+        <button class="decision-btn" onclick="runDecisionHelper('retire')"><strong>Papalapit na ang retirement</strong>Ano ang kailangan kong gawin?</button>
+        <button class="decision-btn" onclick="runDecisionHelper('calamity')"><strong>Naapektuhan kami ng bagyo</strong>Pwede ba akong umutang?</button>
+      </div>
+      <div id="decision-result"></div>
+    </div>
+  </div>
+</section>
+
+<!-- SECTION 9: LINKS -->
+<section id="links" style="background: white;">
+  <div class="container">
+    <div class="fade-in">
+      <span class="section-label">Resources</span>
+      <h2 class="section-title">Mga Official Links at Contacts</h2>
+      <p class="section-sub">Quick access sa mga official PhilHealth portals at contact information.</p>
+    </div>
+
+    <div class="two-col fade-in">
+      <div>
+        <h3 style="font-size:0.9rem; font-weight:700; margin: 0 0 12px; color:var(--blue);">Member Portals</h3>
+        <a href="https://memberinquiry.philhealth.gov.ph/member/" target="_blank" class="link-card">
+          <div class="lc-dot"></div>
+          <div class="lc-text"><strong>Member Portal — Login / Contributions</strong><span>I-check ang iyong contributions at download ng MDR</span></div>
+          <span class="lc-arrow">&#8599;</span>
         </a>
         <a href="https://memberinquiry.philhealth.gov.ph/member/" target="_blank" class="link-card">
-          <span class="lc-icon">👤</span>
-          <div class="lc-text"><strong>Member Portal / Login</strong><span>Check contributions, download MDR, generate SPA</span></div>
-          <span class="lc-arrow">↗</span>
+          <div class="lc-dot"></div>
+          <div class="lc-text"><strong>Online Registration</strong><span>Mag-register online bilang self-employed o voluntary</span></div>
+          <span class="lc-arrow">&#8599;</span>
+        </a>
+        <a href="https://memberinquiry.philhealth.gov.ph/eContribution/" target="_blank" class="link-card">
+          <div class="lc-dot"></div>
+          <div class="lc-text"><strong>eContribution — Gumawa ng SPA</strong><span>I-generate ang Statement of Premium Account (SPA) bago magbayad</span></div>
+          <span class="lc-arrow">&#8599;</span>
+        </a>
+
+        <h3 style="font-size:0.9rem; font-weight:700; margin: 20px 0 12px; color:var(--blue);">Provider Search</h3>
+        <a href="https://www.philhealth.gov.ph/partners/providers/facilities/accredited/" target="_blank" class="link-card">
+          <div class="lc-dot"></div>
+          <div class="lc-text"><strong>Accredited Hospitals at Clinics</strong><span>Hanapin ang mga PhilHealth-accredited facilities malapit sa iyo</span></div>
+          <span class="lc-arrow">&#8599;</span>
         </a>
         <a href="https://www.philhealth.gov.ph/services/acr/" target="_blank" class="link-card">
-          <span class="lc-icon">🔍</span>
-          <div class="lc-text"><strong>Case Rates Search Tool</strong><span>Hanapin kung magkano ang covered para sa iyong sakit</span></div>
-          <span class="lc-arrow">↗</span>
+          <div class="lc-dot"></div>
+          <div class="lc-text"><strong>Case Rates Search Tool</strong><span>Alamin ang coverage amount para sa iyong sakit o operasyon</span></div>
+          <span class="lc-arrow">&#8599;</span>
         </a>
         <a href="https://www.philhealth.gov.ph/partners/providers/facilities/accredited/" target="_blank" class="link-card">
-          <span class="lc-icon">🏥</span>
-          <div class="lc-text"><strong>Accredited Facilities Directory</strong><span>Listahan ng lahat ng PhilHealth-accredited hospitals at clinics</span></div>
-          <span class="lc-arrow">↗</span>
-        </a>
-        <a href="https://www.philhealth.gov.ph/partners/providers/institutional/map/" target="_blank" class="link-card">
-          <span class="lc-icon">🗺️</span>
-          <div class="lc-text"><strong>Interactive Map ng mga Facilities</strong><span>Hanapin ang pinakamalapit na PhilHealth facility sa mapa</span></div>
-          <span class="lc-arrow">↗</span>
-        </a>
-        <a href="https://www.philhealth.gov.ph/downloads/membership/pmrf_012020.pdf" target="_blank" class="link-card">
-          <span class="lc-icon">📄</span>
-          <div class="lc-text"><strong>PMRF Download (Registration Form)</strong><span>I-download ang PhilHealth Member Registration Form</span></div>
-          <span class="lc-arrow">↗</span>
+          <div class="lc-dot"></div>
+          <div class="lc-text"><strong>GAMOT Accredited Providers</strong><span>Mga accredited na pharmacy at medicine providers</span></div>
+          <span class="lc-arrow">&#8599;</span>
         </a>
       </div>
       <div>
-        <h3 style="font-size:0.9rem; font-weight:700; margin-bottom:12px; color:var(--blue);">📋 Accredited Providers (Official PDFs)</h3>
-        <a href="https://www.philhealth.gov.ph/partners/providers/facilities/accredited/" target="_blank" class="link-card">
-          <span class="lc-icon">🏨</span>
-          <div class="lc-text"><strong>Accredited Hospitals at Infirmaries</strong><span>HOSP list — lahat ng accredited hospitals</span></div>
-          <span class="lc-arrow">↗</span>
-        </a>
-        <a href="https://www.philhealth.gov.ph/partners/providers/facilities/accredited/" target="_blank" class="link-card">
-          <span class="lc-icon">💉</span>
-          <div class="lc-text"><strong>Animal Bite Treatment Centers (ABPP)</strong><span>Listahan ng accredited anti-rabies centers</span></div>
-          <span class="lc-arrow">↗</span>
-        </a>
-        <a href="https://www.philhealth.gov.ph/partners/providers/facilities/accredited/" target="_blank" class="link-card">
-          <span class="lc-icon">🦷</span>
-          <div class="lc-text"><strong>Accredited Dental Clinics</strong><span>Oral Health Benefits Package providers</span></div>
-          <span class="lc-arrow">↗</span>
-        </a>
-        <a href="https://www.philhealth.gov.ph/partners/providers/facilities/accredited/" target="_blank" class="link-card">
-          <span class="lc-icon">👁️</span>
-          <div class="lc-text"><strong>Accredited Optometry Clinics</strong><span>Optometry Benefit Package providers</span></div>
-          <span class="lc-arrow">↗</span>
-        </a>
-        <a href="https://www.philhealth.gov.ph/partners/providers/facilities/accredited/" target="_blank" class="link-card">
-          <span class="lc-icon">🤝</span>
-          <div class="lc-text"><strong>YAKAP Accredited Clinics</strong><span>Listahan ng mga YAKAP primary care providers</span></div>
-          <span class="lc-arrow">↗</span>
-        </a>
-        <a href="https://www.philhealth.gov.ph/partners/providers/facilities/accredited/" target="_blank" class="link-card">
-          <span class="lc-icon">💊</span>
-          <div class="lc-text"><strong>GAMOT Accredited Providers</strong><span>Mga accredited na pharmacy/medicine providers</span></div>
-          <span class="lc-arrow">↗</span>
-        </a>
-
-        <h3 style="font-size:0.9rem; font-weight:700; margin: 20px 0 12px; color:var(--blue);">📞 PhilHealth Hotlines</h3>
-        <div class="card" style="padding:16px;">
-          <p style="font-size:0.85rem; line-height:1.8;">
-            📞 <strong>(02) 8662-2588</strong> — 24/7 Hotline<br>
-            📱 <strong>0998-857-2957</strong> — Smart<br>
-            📱 <strong>0917-127-5987</strong> — Globe<br>
-            📧 <strong>actioncenter@philhealth.gov.ph</strong>
-          </p>
+        <h3 style="font-size:0.9rem; font-weight:700; margin: 0 0 12px; color:var(--blue);">PhilHealth Hotlines</h3>
+        <div class="hotlines-box">
+          <div class="hotline-row">
+            <span class="hotline-label">24/7 Hotline</span>
+            <strong>(02) 8662-2588</strong>
+          </div>
+          <div class="hotline-row">
+            <span class="hotline-label">Smart</span>
+            <strong>0998-857-2957</strong>
+          </div>
+          <div class="hotline-row">
+            <span class="hotline-label">Globe</span>
+            <strong>0917-127-5987</strong>
+          </div>
+          <div class="hotline-row">
+            <span class="hotline-label">Email</span>
+            <strong>actioncenter@philhealth.gov.ph</strong>
+          </div>
         </div>
+
+        <h3 style="font-size:0.9rem; font-weight:700; margin: 20px 0 12px; color:var(--blue);">Iba pang Government Links</h3>
+        <a href="https://www.sss.gov.ph" target="_blank" class="link-card">
+          <div class="lc-dot" style="background:var(--sss);"></div>
+          <div class="lc-text"><strong>SSS — Social Security System</strong><span>sickness, retirement, disability, maternity, death benefits</span></div>
+          <span class="lc-arrow">&#8599;</span>
+        </a>
+        <a href="https://www.pagibigfund.gov.ph" target="_blank" class="link-card">
+          <div class="lc-dot" style="background:var(--pagibig);"></div>
+          <div class="lc-text"><strong>Pag-IBIG Fund</strong><span>Housing loan, MP2 savings, calamity at multi-purpose loans</span></div>
+          <span class="lc-arrow">&#8599;</span>
+        </a>
       </div>
     </div>
 
     <!-- TIPS -->
     <div style="margin-top: 36px;" class="fade-in">
-      <h3 style="font-size:1rem; font-weight:700; margin-bottom:16px;">💡 Tips para Mapakinabangan ang PhilHealth</h3>
+      <h3 style="font-size:1rem; font-weight:700; margin-bottom:16px;">Tips para Mapakinabangan ang PhilHealth</h3>
       <div class="grid grid-3">
         <div class="card" style="border-top: 3px solid var(--blue);">
-          <div class="card-icon icon-blue">📅</div>
           <h3>Bayad nang Regular</h3>
           <p>Kailangan ng 3 contributions sa nakaraang 6 buwan para eligible. Huwag palampasin ang bayad!</p>
         </div>
         <div class="card" style="border-top: 3px solid var(--green);">
-          <div class="card-icon icon-green">🏥</div>
           <h3>Pumunta sa Accredited</h3>
           <p>Palaging pumunta sa PhilHealth-accredited facility para awtomatikong mabawasan ang bill mo.</p>
         </div>
         <div class="card" style="border-top: 3px solid var(--yellow);">
-          <div class="card-icon icon-yellow">🦷</div>
           <h3>Gamitin ang Dental Benefit</h3>
-          <p>Marami ang hindi alam na may libreng dental checkup sa YAKAP! Gamitin ang ₱1,000/taon na dental coverage.</p>
+          <p>Marami ang hindi alam na may libreng dental checkup sa YAKAP. Gamitin ang ₱1,000/taon na dental coverage.</p>
         </div>
         <div class="card" style="border-top: 3px solid var(--red);">
-          <div class="card-icon icon-red">📋</div>
           <h3>I-download ang MDR</h3>
           <p>Ang Member Data Record ay mas accepted ngayon sa ospital kaysa physical ID. I-print o i-save sa phone.</p>
         </div>
         <div class="card" style="border-top: 3px solid var(--blue);">
-          <div class="card-icon icon-blue">💊</div>
           <h3>Mag-Enroll sa YAKAP</h3>
           <p>Libreng checkup, lab tests, at gamot sa enrolled clinic — halos lahat ay hindi gumagamit nito!</p>
         </div>
         <div class="card" style="border-top: 3px solid var(--green);">
-          <div class="card-icon icon-green">🎗️</div>
           <h3>Z-Benefits para sa Malubhang Sakit</h3>
           <p>Kung may cancer, kidney failure, o iba pang malubhang sakit — tanungin ang doktor tungkol sa Z-Benefit pre-authorization.</p>
         </div>
@@ -834,11 +980,11 @@
   </div>
 </section>
 
-<!-- SECTION 9: FAQ -->
-<section id="faq" style="background: white;">
+<!-- SECTION 10: FAQ -->
+<section id="faq" style="background: var(--gray-50);">
   <div class="container">
     <div class="fade-in">
-      <span class="section-label">❓ FAQ</span>
+      <span class="section-label">FAQ</span>
       <h2 class="section-title">Mga Madalas na Tanong</h2>
       <p class="section-sub">Mga sagot sa mga karaniwang katanungan tungkol sa PhilHealth.</p>
     </div>
@@ -861,7 +1007,7 @@
         <div class="faq-a">Oo! Kasama sa coverage ang: <strong>legal spouse</strong>, <strong>mga anak na wala pang 21 taong gulang</strong> (hindi kasal, walang trabaho), at <strong>mga magulang na 60 taong gulang pataas</strong>. Para maidagdag sila sa records, pumunta sa PhilHealth office na may dalang PSA Marriage Certificate (para sa asawa) o PSA Birth Certificate (para sa mga anak).</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
-        <div class="faq-q"><span>Pwede pa ba akong mag-claim kahit may arrears/hindi nakabayad?</span><span class="faq-icon">+</span></div>
+        <div class="faq-q"><span>Pwede pa ba akong mag-claim kahit may arrears / hindi nakabayad?</span><span class="faq-icon">+</span></div>
         <div class="faq-a">Kailangan ng <strong>3 monthly contributions sa loob ng nakaraang 6 buwan</strong>, o <strong>9 contributions sa nakaraang 12 buwan</strong> para eligible ka sa hospitalization benefits. Walang penalty sa missed payments, pero hindi ka pwede mag-claim hangga't hindi natutupad ang minimum contributions.</div>
       </div>
       <div class="faq-item" onclick="toggleFaq(this)">
@@ -880,6 +1026,10 @@
         <div class="faq-q"><span>Ano ang Lifetime Member at paano maging isa?</span><span class="faq-icon">+</span></div>
         <div class="faq-a">Kung nagbayad ka ng <strong>120 monthly contributions</strong> (katumbas ng 10 taon), awtomatiko kang magiging Lifetime Member — hindi na kailangang magbayad ng contribution pa at may coverage ka habang buhay. Para ma-verify ang status mo, pumunta sa PhilHealth office o mag-check sa Member Portal.</div>
       </div>
+      <div class="faq-item" onclick="toggleFaq(this)">
+        <div class="faq-q"><span>Ano ang pagkakaiba ng SSS, PhilHealth, at Pag-IBIG?</span><span class="faq-icon">+</span></div>
+        <div class="faq-a"><strong>PhilHealth</strong> — para sa hospital bills at health coverage. <strong>SSS (Social Security System)</strong> — para sa cash benefits kung magkasakit, maagang mawalan ng trabaho, mag-retire, o mamatay ang miyembro. Nagbibigay din ng loans. <strong>Pag-IBIG (HDMF)</strong> — para sa housing loan, savings (MP2), at emergency loans. Lahat tatlo ay kailangan ng isang employed na Pilipino — pinoprotektahan ng bawat isa ang iba't ibang aspeto ng iyong buhay.</div>
+      </div>
     </div>
   </div>
 </section>
@@ -887,8 +1037,8 @@
 <!-- FOOTER -->
 <footer>
   <div class="container" style="max-width:600px; margin:0 auto;">
-    <p style="font-size:1.5rem; margin-bottom:8px;">🇵🇭</p>
-    <p><strong>PhilHealth Lite</strong> — Unofficial Guide para sa mga Pilipino</p>
+    <div class="footer-brand">PhilHealth<span>LITE</span></div>
+    <p>Unofficial Guide para sa mga Pilipino</p>
     <p style="margin-top:8px;">Ang website na ito ay hindi opisyal na website ng PhilHealth. Para sa pinakabagong impormasyon, palaging bisitahin ang <a href="https://www.philhealth.gov.ph" target="_blank">philhealth.gov.ph</a>.</p>
     <p style="margin-top:12px; font-size:0.78rem; color: rgba(255,255,255,0.4);">Naglalaman ng impormasyon base sa 2026 PhilHealth guidelines. Pina-updated noong Abril 2026.</p>
   </div>
